@@ -62,7 +62,7 @@ st.markdown("""
     Ideal for learning, analysis, or deployment.
 """, unsafe_allow_html=True)
 
-@st.cache_data(ttl=3600)
+@st.cache(ttl=3600)
 def load_dataset(name):
     return sns.load_dataset(name)
 

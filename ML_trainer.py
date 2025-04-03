@@ -137,7 +137,7 @@ with data_tab2:
             st.info("No missing values found in the dataset.")
             
         st.subheader("Data Types")
-        st.write(pd.DataFrame({'Data Type': dataset.dtypes}))
+        st.write(pd.DataFrame({'Data Type': dataset.dtypes.astype(str)}))
 
 with data_tab3:
     if len(dataset_info["numeric_cols"]) > 0:
